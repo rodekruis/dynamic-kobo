@@ -13,7 +13,7 @@ Developed by Karla Peña Ramírez, packaged by [Jacopo Margutti](https://github.
 ## Set up
 1. Download and install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 2. Download the geckodriver binary for your platform ([here](https://github.com/mozilla/geckodriver/releases))
-3. Install from [PyPI](https://pypi.org/project/dynamic-kobo/)
+3. Install dynamic-kobo from [PyPI](https://pypi.org/project/dynamic-kobo/)
 
 ```pip install dynamic-kobo```
 
