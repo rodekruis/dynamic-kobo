@@ -1,10 +1,11 @@
 # dynamic-kobo
 Scripts to replace / update / redeploy KoBo forms.
 
-Developed by Karla Pena Ramirez, packaged by [Jacopo Margutti](https://github.com/jmargutt).
+Developed by Karla Peña Ramírez, packaged by [Jacopo Margutti](https://github.com/jmargutt).
 
 ## Requirements
 1. [Python >= 3.7](https://www.python.org/downloads/)
+2. [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 2. [Geckodriver](https://github.com/mozilla/geckodriver) (the Firefox webdriver); download it from [here](https://github.com/mozilla/geckodriver/releases).
 
 ## Set up

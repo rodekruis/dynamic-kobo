@@ -14,9 +14,8 @@ from selenium.webdriver.common.by import By
 import time
 import click
 import warnings
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 warnings.filterwarnings("ignore", category=DeprecationWarning)
-load_dotenv()
 
 # Drop files function
 # JavaScript: HTML5 File drop
@@ -48,17 +47,19 @@ def drop_files(element, files, offsetX=0, offsetY=0):
 
 
 @click.command()
-@click.option("--headless", is_flag=True, default=False, help="run headless (no GUI)")
+@click.option('--config', default=".env", help="path to configuration file (.env)")
+@click.option('--headless', is_flag=True, default=False, help="run headless (no GUI)")
 @click.option('--koboserver', default="", help='URL of KoBo server, e.g. https://kobonew.ifrc.org/')
 @click.option('--username', default="", help='username')
 @click.option('--password', default="", help='password')
 @click.option('--formid', default="", help='form (asset) ID')
-@click.option('--newform', default="", help='absolute path to new form xlsx')
+@click.option('--newform', default="", help='absolute path to new form (.xlsx)')
 @click.option('--geckodriver', default="", help='absolute path to geckodriver')
-def replace_redeploy(headless, koboserver, username, password, formid, newform, geckodriver):
+def main(config, headless, koboserver, username, password, formid, newform, geckodriver):
     """
     replace KoBo form with a new one and redeploy
     """
+    load_dotenv(config)
 
     # initialize web driver
     # Get geckodriver, the Firefox browser driver, at https://github.com/mozilla/geckodriver/releases
@@ -134,4 +135,4 @@ def replace_redeploy(headless, koboserver, username, password, formid, newform, 
 
 
 if __name__ == "__main__":
-    replace_redeploy()
+    main()
