@@ -9,7 +9,6 @@ Developed by Karla Pena Ramirez, packaged by [Jacopo Margutti](https://github.co
 
 ## Set up
 Install required Python packages
-
 ```pip install -r requirements.txt```
 
 ## Usage
