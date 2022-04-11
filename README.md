@@ -38,7 +38,7 @@ Options:
 N.B. all options can be stored in a `.env` file, the script will load them automatically as environment variables. Example:
 ```
 GECKODRIVER=C:\geckodriver\geckodriver.exe
-KOBO_SERVER=https://kobonew.ifrc.org/
+KOBO_SERVER=https://kobo.humanitarianresponse.info/
 USERNAME=...
 PASSWORD=...
 FORM_ID=ai3sdfC1GnERTW72rwwSFq
