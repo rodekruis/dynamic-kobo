@@ -27,7 +27,7 @@ Usage: replace-redeploy [OPTIONS]
 Options:
   --config            path to configuration file (.env)
   --headless          run headless (no GUI)
-  --koboserver TEXT   URL of KoBo server, e.g. https://kobonew.ifrc.org/
+  --koboserver TEXT   URL of KoBo server
   --username TEXT     username
   --password TEXT     password
   --formid TEXT       form (asset) ID
